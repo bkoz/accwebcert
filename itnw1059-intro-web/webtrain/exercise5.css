@@ -1,0 +1,25 @@
+#paragraph1 {
+  color: white;
+  font-family: Arial;
+  background-image: url("images/paper.jpg")
+}
+
+#paragraph2 {
+  color: green;
+  font-family: Arial;
+  font-size: larger;
+  background-color: #bbbbbb;
+  font-family: Courier
+}
+
+body {
+  margin: 25px 75px 25px 75px;
+}
+
+h1 {
+  font-family: 'Times New Roman', Times, serif
+}
+
+h2{
+  font-family: 'Lucida Sans', sans-serif
+}

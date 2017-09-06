@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- 
+File: ~/public_html/exercise5.html
+Author: Bob Kozdemba (bkozdemba@gmail.com)
+Created: 8/18/2017
+Version: 1
+Description: An html page that references an external CSS file.
+
+Create a stylesheet that sets two different sets of attributes for 
+the <p> tag. The first uses a background image and colored text in the Arial font written in the 
+area. The second uses a background color and larger colored text in the Courier font. 
+-->
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="exercise5.css">
+  <title>Graded Exercise #5</title>
+</head>
+
+<body>
+  <h1>Graded Exercise #5</h1>
+  <article>
+    <h2>Two paragraphs</h2>
+    <section>
+      <h3>Paragraph 1</h3>
+      <p id="paragraph1">
+        This is paragraph 1. The style attribute for this paragraph uses a background image of a piece of paper towel. The picture
+        was taken with a cell phone and cropped to a smaller size. It appears very dark in color because I did not use a
+        flash when I took the photo. The text uses the Aerial font family with a default font size.
+      </p>
+    </section>
+    <section>
+      <h3>Paragraph 2</h3>
+      <p id="paragraph2">
+        This is paragraph 2. Each paragraph tag contains an id attribute so unique styles can be assigned to each paragraph. The
+        text uses the Courier font family with a larger font size.
+      </p>
+    </section>
+  </article>
+
+  <footer>
+    <hr> Copyright &copy; 2017, Bob Kozdemba
+    <br>
+    <a href="http://validator.w3.org/check?uri=referer">HTML5</a>;
+  </footer>
+
+</body>
+
+</html>
