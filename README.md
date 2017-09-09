@@ -1,6 +1,6 @@
-# itnw-1059
-Introduction to web programming
-## Notes
+# ACC Web Certification
+Various courses in web programming
+## Class Notes
 
 ### Visual Studio Code
 
