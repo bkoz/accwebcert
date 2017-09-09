@@ -60,7 +60,7 @@ footer {
   font-size: smaller
 }
 
-#ex1 {
+.ex1 {
   column-width: 300px;
   border: 1px solid gray
 }
