@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+File: imed-1040/graded-exercise-03.html
+Author: Bob Kozdemba (bkozdemba@gmail.com)
+Created: 9/12/2017
+Version: 1
+Description: Create a form that collects the user's name, street, city, zip code and country. 
+Create a select menu that let's them choose between Visa, Mastercard or American Express. 
+Then collect the card number. For the expiration date use a drop-down menu with the 12 months 
+and another drop-down menu for the year. Then create a textarea for the user's comments, 
+and finally, add submit and reset buttons. Use the mailto method to send the form to 
+your email address. Line the form elements up neatly using tables.
+-->
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Graded Exercise 03 - Forms</title>
+  <link rel="stylesheet" type="text/css" href="imed-1040.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>EXERCISE 3</h1>
+  </header>
+
+  <article>
+    <h2>Bob Kozdemba</h2>
+    <section>
+      <h3>HTML Forms</h3>
+      <form action="mailto:bkozdemba@gmail.com">
+        Name: <input type="text" name="name"> 
+        Street: <input type="text" name="street"> 
+        City: <input type="text" name="city">        
+        Zip: <input type="text" name="zip"> 
+        Country: <input type="text" name="country">
+        <p>
+          Select Card Type:
+          <select name="card" id="card">
+          <option value="visa">Visa</option>
+          <option value="mastercard">Master Card</option>
+          <option value="amex">American Express</option>
+          </select>
+        </p>
+        <p>
+          Card #: <input type="text" name="name">
+        </p>
+        <p>Expiration Date</p>
+        <p>
+          Month:
+          <select name="month" id="month">
+              <option value="1">January</option>
+              <option value="2">February</option>
+              <option value="3">March</option>
+              </select>
+        </p>
+        <p>
+          Year:
+          <select name="year" id="year">
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                </select>
+        </p>
+        <p>
+          Comments: <input type="text">
+          <input type="submit" name="submit">
+          <input type="reset" name="reset">
+        </p>
+      </form>
+    </section>
+
+  </article>
+
+  <footer>
+    <hr> Copyright &copy; 2017, Bob Kozdemba
+    <br>
+    <a href="http://validator.w3.org/check?uri=referer">HTML5</a>;
+  </footer>
+
+</body>
+
+</html>

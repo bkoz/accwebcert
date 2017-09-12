@@ -23,7 +23,10 @@ Description: My projects in html.
     <h3>Pixels and Polygons</h3>
     <section>
       <h3>OpenGL Shading Framework</h3>
+      <figure>
       <img src="images/espyshader.jpg" alt="Fragment Shader">
+      <figcaption>Fragment Shader</figcaption>
+    </figure>
       <p>
         I developed an object oriented framework to make working with OpenGL 2.1 easier. The C++ class library initializes OpenGL
         extension entry points, provides file loading, compiling, linking and error checking of vertex and fragment programs.
@@ -41,7 +44,10 @@ Description: My projects in html.
     </section>
     <section>
       <h3>Parallel Ray Tracer</h3>
+      <figure>
       <img src="images/smpray.jpg" alt="Parallel Ray Tracer"> 
+      <figcaption>SMP Ray Tracer</figcaption>
+      </figure>
       <p>I ported a real-time SMP ray tracing program from IRIX/GL/SPROC
       to Linux/OpenGL/POSIX threads to demonstrate how scalable computing can be synchronized with double buffered OpenGL
       rendering. Arrays of semaphores were used to provide a barrier to synchronize worker threads with OpenGL buffer swaps.
@@ -49,8 +55,14 @@ Description: My projects in html.
     </section>
     <section>
       <h3>GPU-based Scalable Volumetric Shading</h3>
+    <figure>
       <img src="images/skull.jpg" alt="Volumetric No Lighting">
+     <figcaption>Diffuse Shading Model</figcaption>
+    </figure>
+    <figure>
       <img src="images/skullshaded.jpg" alt="Volumetric Shader"> 
+      <figcaption>Phong Shading Model</figcaption>
+    </figure>
       <p>For SGI’s Prism system, I implemented a GPU fragment program,
       written in SIMD assembler, that performs high quality lighting on volumetric data. The OpenGL Volumizer API provided
       a multiple GPU scalable framework based on 2D screen decomposition. As each slice of the volume is rendered, callbacks
@@ -61,7 +73,10 @@ Description: My projects in html.
     </section>
     <section>
       <h3>3D MRI Reconstruction</h3>
+      <figure>
       <img src="images/kozmri.jpg" alt="Bob's MRI"> 
+      <figcaption>Bob's brain</figcaption>
+      </figure>
       <p> This sample application was written to complement an introductory seminar
       on medical imaging I developed based on SGI’s OpenGL Volumizer API. It features user controllable CT transfer functions
       to easily locate bone and skin boundaries, clipping, volumetric lighting, trackball control and asymmetric stereo viewing

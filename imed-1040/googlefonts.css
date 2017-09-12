@@ -1,0 +1,26 @@
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  color: #669999
+}
+
+body {
+  margin: 25px 75px 25px 75px;
+  font-family: 'Open Sans', sans-serif
+}
+
+article {
+  margin-top: 50px
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  color: #555555
+}
+
+footer {
+  color: lightgrey
+}
