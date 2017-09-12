@@ -68,10 +68,10 @@ footer {
 th, td {
   color: #A21515;
   text-align: center;
-  border: 1px solid gray;
+  border: 1px solid gray
   }
   
 .ex2 {
-  column-width: 300px;
+  column-width: 75px;
   border: 1px solid gray
 }
