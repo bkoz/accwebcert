@@ -24,3 +24,8 @@ h3 {
 footer {
   color: lightgrey
 }
+
+div.center {
+  color: orange;
+  font: italic normal bold italic 12px/30px Aerial, serif;
+}
