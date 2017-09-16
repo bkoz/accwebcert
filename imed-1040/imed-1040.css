@@ -60,18 +60,19 @@ footer {
   font-size: smaller
 }
 
-.ex1 {
-  column-width: 300px;
-  border: 1px solid gray
-}
-
-th, td {
+table.ex1, th.ex1, td.ex1 {
   color: #A21515;
+  column-width: 300px; 
   text-align: center;
   border: 1px solid gray
   }
   
-.ex2 {
+table.ex2 {
   column-width: 75px;
   border: 1px solid gray
+}
+
+table.ex3, td, th {
+  color: black;
+  border-collapse: collapse
 }
