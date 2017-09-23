@@ -36,16 +36,16 @@
         <h3>Latest News</h3>
         <h4>ACM</h4>
         <h5>I used to attend this fun conference.</h5>
-        <a href="http://s2018.siggraph.org/">The 2018 SIGGRAPH conference</a>        
-        </div>
+        <a href="http://s2018.siggraph.org/">The 2018 SIGGRAPH conference</a>
+      </div>
       <div id="content">
         <!-- insert the page content here -->
         <h1>Pixels and Polygons</h1>
         <article>
-          <h3>3D Graphics Hacks</h3>
-          <section>
-            <h4>OpenGL Shading Framework</h4>
+          <h3>A collection of 3D graphics hacks I worked on from my younger days.</h3>
+          <section class="hack">
             <span class="left"><img src="images/espyshader.jpg" alt="Fragment Shader" /></span>
+            <h4>OpenGL Shading Framework</h4>
             <p>
               I developed an object oriented framework to make working with OpenGL 2.1 easier. The C++ class library initializes OpenGL
               extension entry points, provides file loading, compiling, linking and error checking of vertex and fragment
@@ -53,57 +53,58 @@
               base classes can be sub classed to create more complex shaders as shown in the examples that follow.
             </p>
           </section>
-          <section>
+          <section class="hack">
+            <span class="left"><img src="images/smpray.jpg" alt="Parallel Ray Tracer"></span>
             <h4>Parallel Ray Tracer</h4>
-              <span class="left"><img src="images/smpray.jpg" alt="Parallel Ray Tracer"></span>
             <p>I ported a real-time SMP ray tracing program from IRIX/GL/SPROC to Linux/OpenGL/POSIX threads to demonstrate
               how scalable computing can be synchronized with double buffered OpenGL rendering. Arrays of semaphores were
-              used to provide a barrier to synchronize worker threads with OpenGL buffer swaps.
+              used to provide a barrier to synchronize worker threads with OpenGL buffer swaps. This demonstration was also 
+              used to illustrate how Linux resource control can be used to limit how much CPU a process can consume. 
             </p>
           </section>
-          <section>
-            <h3>GPU-based Scalable Volumetric Shading</h3>
-                <span class="left"><img src="images/skull.jpg" alt="Volumetric No Lighting"></span>
-              <p>Diffuse Shading</p>
-            
-                <span class="right"><img src="images/skullshaded.jpg" alt="Volumetric Shader"></span>
-             <p>Phong Shading</p>
+          <section class="hack">
+            <span class="left"><img src="images/skull.jpg" alt="Volumetric No Lighting"></span>
+            <h4>GPU-based Scalable Volumetric Shading</h4>
+            <span class="right"><img src="images/skullshaded.jpg" alt="Volumetric Shader"></span>
             <p>For SGI’s Prism system, I implemented a GPU fragment program, written in SIMD assembler, that performs high quality
               lighting on volumetric data. The OpenGL Volumizer API provided a multiple GPU scalable framework based on 2D
               screen decomposition. As each slice of the volume is rendered, callbacks are used to generate texture coordinates
               which are passed to the fragment shader. Using the texture coordinates, the shader computes the gradients on
               the fly using a forward difference method. Once the gradients are obtained, a full Phong lighting model is
-              computed for each fragment. The user is able to control the light source and object position in real time.</p>
+              computed for each fragment. The user is able to control the light source and object position in real time. The image 
+              on the left is what a standard volumetric rendering looks like while the image on the right was rendered 
+              using a full Phong lighting and shading model.</p>
           </section>
-          <section>
-            <h3>3D MRI Reconstruction</h3>
-            
-                <span class="left"><img src="images/kozmri.jpg" alt="Bob's MRI"></span>
-              
+          <section class="hack">
+
+            <span class="left"><img src="images/kozmri.jpg" alt="Bob's MRI"></span>
+            <h4>3D MRI Reconstruction</h4>
             <p> This sample application was written to complement an introductory seminar on medical imaging I developed based
               on SGI’s OpenGL Volumizer API. It features user controllable CT transfer functions to easily locate bone and
               skin boundaries, clipping, volumetric lighting, trackball control and asymmetric stereo viewing to support
-              immersive environments.</p>
+              immersive environments. The dataset of my head I obtained during a routine MRI. If you ever have an MRI or CT scan,
+              always ask for your data, it makes for great conversation at parties!</p>
           </section>
-          <section>
-            <h3>Medical Data Visualizer</h3>
+          <section class="hack">
             <span class="left"><img src="images/medvis.jpg" alt="Medical Data Visualizer"></span>
+            <h4>Medical Data Visualizer</h4>
             <p>This project was done to complete an upper level course in Computer Graphics at the RIT. The application was
               written using the Visualization Toolkit (VTK) and runs under IRIX, LINUX and Windows. It includes features
               such as volumetric ray tracing, iso-surfacing, slicing, segmentation and LOD management and includes a user
-              manual.</p>
+              manual.
+            </p>
           </section>
-          <section>
-            <h3>Video Chalkboard</h3>
+          <section class="hack">
             <span class="left"><img src="images/videochalk.jpg" alt="Video Chalk"></span>
+            <h4>Video Chalkboard</h4>
             <p> Chalkboard is an application that allows the user to use the mouse as a pen to write over incoming live video.
               Each frame of video is captured using SGI’s video libraries and is written to the screen as pixels with OpenGL.
               The pen strokes are accumulated in a linked list then written on top of the video pixels as GL_LINES or pixels
               depending on which command line option is selected. Optionally, the blended output may be sent to video out.</p>
           </section>
-          <section>
-            <h3>Kodak DCS digital camera device driver and image viewer</h3>
+          <section class="hack">
             <span class="left"><img src="images/dcsviewer.jpg" alt="Blood Cells"></span>
+            <h4>Kodak DCS digital camera device driver and image viewer</h4>
             <p> Kodak released the DCS 10000 camera, only drivers existed for the Windows operating system. customers to use
               the camera in collaborative medical environments. The driver was written from I developed a driver and imaging
               application under the IRIX operating system enabling SGI’s scratch using the user level SCSI libraries provided
