@@ -298,3 +298,8 @@ table tr td
     margin-top: 10px;
     margin-bottom: 10px
   }
+
+  #smoke {
+    width: 440px;
+    height: 440px;
+  }

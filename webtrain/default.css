@@ -1,13 +1,11 @@
 
-html {
-  height: 100%
-}
 h1 {
     font-family: sans-serif;
     color: #222299
 }
 
 body {
+    height: 100%;
     margin-right: 75px;
     margin-left: 75px;
     margin-top: 50px;
