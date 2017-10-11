@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+File: itse-6065/ex3.html
+Author: Bob Kozdemba (bkozdemba@gmail.com)
+Created: 10/07/2017
+Version: 1
+
+Description: 
+Write a program that asks the user to enter his or her age. Your program will respond to the user, 
+using an alert dialog, and your response will depend on the user's age.
+
+If the user is under 18, you will respond with, "Wow, you are young".
+If the user is between the ages of 18 and 23, your response will be, "You are getting on in years".
+And, if the user is over 23 years old, you will respond with, "Wow, you are really old".
+
+Save your file as a .htm file, and upload the file below. This assignment is worth a maximum of 10 points.
+-->
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Graded Exercise 03 - JavaScript</title>
+  <link rel="stylesheet" type="text/css" href="style/ex3.css">
+
+  <script>
+    age = window.prompt("Please enter your age")
+
+    if (age < 18) {
+      document.write("Wow, you are young")
+    } else if (age >= 18 && age <= 23) {
+      document.write("You are getting on in years")
+    } else if (age > 23) {
+      document.write("Wow, you are really old")
+    } else {
+      document.write("You entered a non-numeric value!")
+    }
+
+  </script>
+
+</head>
+
+<body>
+  <header>
+    <h1>Exercise 3</h1>
+  </header>
+
+
+  <footer>
+    <hr> Copyright &copy; 2017, Bob Kozdemba
+    <br>
+    <a href="http://validator.w3.org/check?uri=referer">HTML5</a>;
+  </footer>
+
+</body>
+
+</html>
