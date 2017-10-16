@@ -43,8 +43,24 @@ The highest possible score for this assignment is 70 points.
 
   <script>
 
-    document.write("html form goes here")
-
+    document.write("<form action='handler'>")
+    document.write("<input class='fname' type='text' name='first' value='First name' />")
+    document.write("<input class='lname' type='text' name='last' value='Last name' />")
+    document.write("<input class='street' type='text' name='street' value='Street' />")
+    document.write("<br>")
+    document.write("<input class='city' type='text' name='city' value='City' />")
+    document.write("<input class='state' type='text' name='state' value='State' />")
+    document.write("<input class='zip' type='text' name='zip' value='Zip' />")
+    document.write("<input class='country' type='text' name='country' value='Country' />")
+    document.write("<br>")
+    document.write("<input class='occ' type='text' name='occ' value='Occupation' />")
+    document.write("<input class='edu' type='text' name='edu' value='Education Level' />")
+    document.write("<br>")
+    document.write("Hobbies and Interests")
+    document.write("<br>")
+    document.write("<textarea row='5' cols='30' class='hobbies' type='textarea' name='hobbies' value='Hobbies' />")
+    document.write("</textarea>")
+    document.write("</form>")
 
   </script>
 
@@ -54,7 +70,6 @@ The highest possible score for this assignment is 70 points.
   <header>
     <h1>Resume Builder</h1>
   </header>
-
 
   <footer>
     <hr> Copyright &copy; 2017, Bob Kozdemba
