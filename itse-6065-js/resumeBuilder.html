@@ -43,7 +43,7 @@ The highest possible score for this assignment is 70 points.
 
   <script>
 
-    document.write("<form action='handler'>")
+    document.write("<form action=''>")
     document.write("<input class='fname' type='text' name='first' value='First name' />")
     document.write("<input class='lname' type='text' name='last' value='Last name' />")
     document.write("<input class='street' type='text' name='street' value='Street' />")
@@ -60,8 +60,11 @@ The highest possible score for this assignment is 70 points.
     document.write("<br>")
     document.write("<textarea row='5' cols='30' class='hobbies' type='textarea' name='hobbies' value='Hobbies' />")
     document.write("</textarea>")
+    document.write("<input class='submit' type='submit' name='submitted' value='submit' />");
     document.write("</form>")
 
+    var obj = document.getElementsByClassName("fname")
+    console.log("fname =", obj.value)
   </script>
 
 </head>
