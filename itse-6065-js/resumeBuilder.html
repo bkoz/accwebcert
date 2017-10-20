@@ -94,24 +94,78 @@ Create something you will be proud to add your your professional portfolio!
 
     }
     document.write("<form>")
+    document.write("<table>")
+    
+    document.write("<tr>")
+    document.write("<td>")
+    document.write("First Name")
     document.write("<input id='fname' class='fname' type='text' name='first' value='First name' />")
+    document.write("</td>")
+    document.write("<td>")
+    document.write("Last Name")
     document.write("<input id='lname' class='lname' type='text' name='last' value='Last name' />")
+    document.write("</td>")
+    document.write("</tr>")
+
+    document.write("<tr>")
+    document.write("<td>")
     document.write("<input id='street' type='text' name='street' value='Street' />")
-    document.write("<br>")
+    document.write("</td>")
+    document.write("</tr>")
+    
+    document.write("<tr>")
+    document.write("<td>")
     document.write("<input id='city' type='text' name='city' value='City' />")
+    document.write("</td>")
+    
+    document.write("<td>")
     document.write("<input id='state' type='text' name='state' value='State' />")
+    document.write("</td>")
+    
+    document.write("<td>")
     document.write("<input id='zip' type='text' name='zip' value='Zip' />")
+    document.write("</td>")
+    document.write("</tr>")
+    
+    document.write("<tr>")
+    document.write("<td>")
     document.write("<input id='country' type='text' name='country' value='Country' />")
-    document.write("<br>")
+    document.write("</td>")
+    document.write("</tr>")
+    
+    document.write("<tr>")
+    document.write("<td>")
     document.write("<input id='occ' type='text' name='occ' value='Occupation' />")
+    document.write("</td>")
+    
+    document.write("<td>")
+    
     document.write("<input id='edu' type='text' name='edu' value='Education Level' />")
-    document.write("<br>")
+    
+    document.write("</td>")
+    document.write("<tr>")
+    document.write("<td>")
+    
     document.write("Hobbies and Interests")
-    document.write("<br>")
+    document.write("</td>")
+    document.write("</tr>")
+    
+    document.write("<tr>")
+    document.write("<td>")
+    
     document.write("<textarea row='5' cols='30' id='hobbies' type='textarea' name='hobbies' value='Hobbies' />")
     document.write("</textarea>")
+    document.write("</td>")
+    document.write("</tr>")
+      
+    document.write("<tr>")
+    document.write("<td>")
+    
     document.write("<input type='button' name='btn' value='Submit' onClick='handler();'>")
     document.write("<h3 id='h3' original h3 </h3>")
+    document.write("</td>")
+    document.write("</tr>")
+    
     document.write("</form>")
 
     var obj = document.getElementsByClassName("fname")
