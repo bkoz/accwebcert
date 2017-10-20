@@ -5,3 +5,8 @@ h1 {
 #job {
     color: red
 }
+
+#title {
+  font-family: sans-serif;
+  color: mediumslateblue
+}
