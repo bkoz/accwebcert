@@ -29,9 +29,6 @@ prepared to hand in a very well designed, attractive app with bells and whistles
 You will be graded on your style, as well as your coding and functionality, so be sure to make your HTML form 
 and resulting output neat and attractive. Add a header image, other images, and fonts and color to your output. 
 Create something you will be proud to add your your professional portfolio!
-
-The highest possible score for this assignment is 70 points.
-
 -->
 
 <html lang="en">
@@ -43,7 +40,12 @@ The highest possible score for this assignment is 70 points.
 
   <script>
 
+    //
+    // This function is called when the submit push button is selected.
+    //
     function handler() {
+      
+      // Get the form data and assign it to local variables.
       var lname = document.getElementById("lname")
       var fname = document.getElementById("fname")
       var street = document.getElementById("street")
@@ -58,18 +60,22 @@ The highest possible score for this assignment is 70 points.
 
       console.log('handler: ')
 
-      // Need to add proper head tags here and also close them.
+      // Add the header.
       win = window.open()
       win.document.write("<html lang='en'>")
       win.document.write("<head><meta charset='UTF-8'><title>Resume for " + fname.value + " " + lname.value + "</title></head>")
       win.document.write("<link rel='stylesheet' type='text/css' href='style/resumeBuilder.css'>")
-      win.document.write("<body>")
+      
+      // Body begins here.
+      win.document.write("<body id='resume-body'>")
       win.document.write("<h1 id='title'>" + fname.value + " " + lname.value + "</h1>")
+      win.document.write("<div id='address'>")
       win.document.write("<h3>" + street.value )
       win.document.write("<br>")
       win.document.write(city.value + ", " + state.value + " " + zip.value)
       win.document.write("<br>")
       win.document.write(country.value)
+      win.document.write("</div>")
       win.document.write("</h3>")
       win.document.write("<h3>Work Experience</h3>")
       win.document.write(occ.value)
@@ -79,7 +85,7 @@ The highest possible score for this assignment is 70 points.
       win.document.write("<p>" + hobbies.value + "</p>")
       win.document.write("</body>")
 
-      // Footer and closing tags.
+      // Add the footer and closing tags.
       win.document.write("<footer><hr> Copyright &copy; 2017, Bob Kozdemba<br>")
       win.document.write("<a href='http://validator.w3.org/check?uri=referer'>HTML5</a>;")
       win.document.write("</footer>")
