@@ -34,14 +34,14 @@ Create something you will be proud to add your your professional portfolio!
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset='UTF-8'>
   <title>Resume Builder</title>
   <link rel="stylesheet" type="text/css" href="style/resumeBuilder.css">
 
   <script>
 
     //
-    // This function is called when the submit push button is selected.
+    // This function is called when the submit push button is clicked.
     //
     function handler() {
 
@@ -82,7 +82,7 @@ Create something you will be proud to add your your professional portfolio!
       win.document.write("<h3>Education</h3>")
       win.document.write(edu.value)
       win.document.write("<h3>Hobbies and Interests</h3>")
-      win.document.write("<p>" + hobbies.value + "</p>")
+      win.document.write(hobbies.value)
       win.document.write("</body>")
 
       // Add the footer and closing tags.
@@ -97,6 +97,7 @@ Create something you will be proud to add your your professional portfolio!
     // Begin body
 
     document.write("<body><h1>The <em>JavaScript</em> Resume Builder</h1>")
+    document.write("<h2>Fill out the form and click submit.</h2>")
 
     // The form fields will be put into a table. 
     document.write("<form>")
@@ -156,22 +157,17 @@ Create something you will be proud to add your your professional portfolio!
 
     document.write("<tr>")
     document.write("<td>")
-    document.write("Hobbies and Interests ")
+    document.write("Hobbies and Interests ->")
     document.write("</td>")
     document.write("<td>")
-    document.write("<textarea rows='10' cols='30' id='hobbies' type='textarea' name='hobbies' value='Hobbies' />")
+    document.write("<textarea rows='5' cols='30' id='hobbies' type='textarea' name='hobbies' value='Hobbies' />")
     document.write("</textarea>")
     document.write("</td>")
     document.write("</tr>")
 
     document.write("<tr>")
     document.write("<td>")
-    document.write("Click submit and your resume will appear in a new tab.")
-    document.write("</td>")
-
-    document.write("<tr>")
-    document.write("<td>")
-    document.write("<input type='button' name='btn' value='Submit' onClick='handler();'>")
+    document.write("<input id='submit' type='button' name='btn' value='Submit' onClick='handler();'>")
     document.write("</td>")
 
     document.write("</tr>")
