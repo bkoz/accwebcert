@@ -98,24 +98,25 @@ Create something you will be proud to add your your professional portfolio!
 
     document.write("<body><h1>The Resume Builder</h1>")
 
+    // The form fields will be put into a table. 
     document.write("<form>")
     document.write("<table>")
 
     document.write("<tr>")
     document.write("<td>")
-    document.write("First Name ")
+    document.write("First")
     document.write("<input id='fname' class='fname' type='text' name='first' value='First name' />")
     document.write("</td>")
     document.write("<td>")
-    document.write("Last Name ")
+    document.write("Last")
     document.write("<input id='lname' class='lname' type='text' name='last' value='Last name' />")
     document.write("</td>")
     document.write("</tr>")
 
     document.write("<tr>")
-    document.write("<td>")
-    document.write("Street ")
-    document.write("<input id='street' type='text' name='street' value='Street' />")
+    document.write("<td colspan='2'>")
+    document.write("Address")
+    document.write("<input id='street' type='text' name='street' value='1234 My Road' />")
     document.write("</td>")
     document.write("</tr>")
 
@@ -175,8 +176,14 @@ Create something you will be proud to add your your professional portfolio!
 
     document.write("</tr>")
     document.write("<td>")
-    document.write("<footer><hr> Copyright &copy; 2017, Bob Kozdemba<br>")
+    document.write("<footer><hr>")
+    document.write("<td><hr></td>")
+    document.write("<td>")
+    document.write("</tr>")
+    document.write("<td>")
+    document.write("Copyright &copy; 2017, Bob Kozdemba<br>")
     document.write("<a href='http://validator.w3.org/check?uri=referer'>HTML5</a>;")
+    document.write("</td>")
     document.write("</footer>")
       
     document.write("</td>")

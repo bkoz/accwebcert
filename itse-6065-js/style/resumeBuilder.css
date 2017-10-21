@@ -62,3 +62,14 @@ text-align: center
 #address {
   text-align: center
 }
+
+table, td {
+  width: 50%;
+  border-collapse: collapse;
+  border: 1px solid black;
+  border-style: none
+}
+
+input {
+  width: 95%
+}
