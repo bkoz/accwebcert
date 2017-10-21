@@ -18,7 +18,7 @@ article {
 }
 
 section {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   font-style: normal
 }
 
@@ -27,25 +27,25 @@ ul {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   font-style: normal
 }
 
 h2 {
-  font-family: Verdana, Geneva, sans-serif
+  font-family: sans-serif
 }
 
 h3 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   color: #555555
 }
 
 h4 {
-font-family: Arial, Helvetica, sans-serif  
+font-family: sans-serif  
 }
 
 h5 {
-font-family: Arial, Helvetica, sans-serif  
+font-family: sans-serif  
 }
 
 
@@ -80,6 +80,10 @@ input {
 
 #submit {
   border-radius: 8px
+}
+
+#submit:hover {
+  background-color: #dddddd
 }
 
 textarea {
