@@ -35,7 +35,7 @@ Create something you will be proud to add your your professional portfolio!
 
 <head>
   <meta charset="UTF-8">
-  <title>Resume Builder - JavaScript</title>
+  <title>Resume Builder</title>
   <link rel="stylesheet" type="text/css" href="style/resumeBuilder.css">
 
   <script>
@@ -44,7 +44,7 @@ Create something you will be proud to add your your professional portfolio!
     // This function is called when the submit push button is selected.
     //
     function handler() {
-      
+
       // Get the form data and assign it to local variables.
       var lname = document.getElementById("lname")
       var fname = document.getElementById("fname")
@@ -58,19 +58,19 @@ Create something you will be proud to add your your professional portfolio!
       var hobbies = document.getElementById("hobbies")
 
 
-      console.log('handler: ')
+      // console.log('handler: ')
 
       // Add the header.
       win = window.open()
       win.document.write("<html lang='en'>")
       win.document.write("<head><meta charset='UTF-8'><title>Resume for " + fname.value + " " + lname.value + "</title></head>")
       win.document.write("<link rel='stylesheet' type='text/css' href='style/resumeBuilder.css'>")
-      
+
       // Body begins here.
       win.document.write("<body id='resume-body'>")
       win.document.write("<h1 id='title'>" + fname.value + " " + lname.value + "</h1>")
       win.document.write("<div id='address'>")
-      win.document.write("<h3>" + street.value )
+      win.document.write("<h3>" + street.value)
       win.document.write("<br>")
       win.document.write(city.value + ", " + state.value + " " + zip.value)
       win.document.write("<br>")
@@ -92,102 +92,104 @@ Create something you will be proud to add your your professional portfolio!
       win.document.write("</html>")
       win.document.close()
 
-    }
+    } // handler
+
+    // Begin body
+
+    document.write("<body><h1>The Resume Builder</h1>")
+
     document.write("<form>")
     document.write("<table>")
-    
+
     document.write("<tr>")
     document.write("<td>")
-    document.write("First Name")
+    document.write("First Name ")
     document.write("<input id='fname' class='fname' type='text' name='first' value='First name' />")
     document.write("</td>")
     document.write("<td>")
-    document.write("Last Name")
+    document.write("Last Name ")
     document.write("<input id='lname' class='lname' type='text' name='last' value='Last name' />")
     document.write("</td>")
     document.write("</tr>")
 
     document.write("<tr>")
     document.write("<td>")
+    document.write("Street ")
     document.write("<input id='street' type='text' name='street' value='Street' />")
     document.write("</td>")
     document.write("</tr>")
-    
+
     document.write("<tr>")
     document.write("<td>")
+    document.write("City ")
     document.write("<input id='city' type='text' name='city' value='City' />")
     document.write("</td>")
-    
+
     document.write("<td>")
+    document.write("State ")
     document.write("<input id='state' type='text' name='state' value='State' />")
     document.write("</td>")
-    
-    document.write("<td>")
-    document.write("<input id='zip' type='text' name='zip' value='Zip' />")
-    document.write("</td>")
     document.write("</tr>")
-    
+
     document.write("<tr>")
     document.write("<td>")
+    document.write("Zip ")
+    document.write("<input id='zip' type='text' name='zip' value='Zip' />")
+    document.write("</td>")
+    document.write("<td>")
+    document.write("Country ")
     document.write("<input id='country' type='text' name='country' value='Country' />")
     document.write("</td>")
     document.write("</tr>")
-    
+
     document.write("<tr>")
     document.write("<td>")
+    document.write("Occupation ")
     document.write("<input id='occ' type='text' name='occ' value='Occupation' />")
     document.write("</td>")
-    
+
     document.write("<td>")
-    
+    document.write("Education ")
     document.write("<input id='edu' type='text' name='edu' value='Education Level' />")
-    
     document.write("</td>")
+
     document.write("<tr>")
     document.write("<td>")
-    
-    document.write("Hobbies and Interests")
+    document.write("Hobbies and Interests ")
     document.write("</td>")
-    document.write("</tr>")
-    
-    document.write("<tr>")
     document.write("<td>")
-    
     document.write("<textarea row='5' cols='30' id='hobbies' type='textarea' name='hobbies' value='Hobbies' />")
     document.write("</textarea>")
     document.write("</td>")
     document.write("</tr>")
-      
+
     document.write("<tr>")
     document.write("<td>")
-    
+    document.write("Click submit and your resume will appear in a new tab.")
+    document.write("</td>")
+
+    document.write("<tr>")
+    document.write("<td>")
     document.write("<input type='button' name='btn' value='Submit' onClick='handler();'>")
-    document.write("<h3 id='h3' original h3 </h3>")
+    document.write("</td>")
+
+    document.write("</tr>")
+    document.write("<td>")
+    document.write("<footer><hr> Copyright &copy; 2017, Bob Kozdemba<br>")
+    document.write("<a href='http://validator.w3.org/check?uri=referer'>HTML5</a>;")
+    document.write("</footer>")
+      
     document.write("</td>")
     document.write("</tr>")
-    
+
     document.write("</form>")
 
-    var obj = document.getElementsByClassName("fname")
-    console.log('main: ')
-    console.log(obj.first.value)
+    document.write("</body>")
 
 
   </script>
 
 </head>
 
-<body>
-  <header>
-    <h1>Resume Builder</h1>
-  </header>
-
-  <footer>
-    <hr> Copyright &copy; 2017, Bob Kozdemba
-    <br>
-    <a href="http://validator.w3.org/check?uri=referer">HTML5</a>;
-  </footer>
-
-</body>
 
 </html>
