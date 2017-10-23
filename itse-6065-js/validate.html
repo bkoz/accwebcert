@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+File: validate.html
+
+Description: 
+The following error is reported by the HTML validator:
+    
+Error: A charset attribute on a meta element found after the first 1024 bytes.
+
+    At line 37, column 25
+
+     charset="UTF-8">↩    <title>T
+-->
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+  <script>
+    function createMain() {
+      document.write("<h1>Heading</h1>")
+    }
+    function createFooter() {
+      document.write("<footer><hr>")
+      document.write("Copyright &copy; 2017, Your Name<br>")
+      document.write("<a href='http://validator.w3.org/check?uri=referer'>HTML5</a>;")
+      document.write("</footer>")
+    }
+
+    createMain()
+    createFooter()
+
+  </script>
+
+</body>
+
+</html>

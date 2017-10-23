@@ -7,28 +7,8 @@ Version: 1
 
 Description: 
 
-This project will demonstrate your ability to collect data from an HTML form, process that data using Javascript, 
-and print out a formatted report back to the user. Write a Javascript program that displays an HTML form for your 
-user to fill out. Collect your user's first name, last name, street address, city, zip and country. 
-Then collect the user's occupation and education level. Provide a textarea box for the user to write a paragraph 
-about his/her hobbies and interests.
+Create a form and output a fancy resume using JavaScript and HTML.
 
-Your script will gather the data from this form when the user clicks a submit button. It will then create and 
-display an HTML page to the user. This HTML page will summarize all of the information the user has entered in 
-an attractive, resume style Web page.
-
-There are many ways to write this program. The easiest way is to use window.open() to open a new window to 
-output the resume. But, you have also learned more advanced techniques, such as using .innerHTML to change 
-the content of paragraphs and divs in the current page. Use the method you are comfortable with at this time.
-
-I don't mind if students work in pairs on this assignment. You can communicate using the course forum or the 
-student chat room, or meet in person if you like. But, if you do work with another student, please keep in mind 
-that I will expect your Javascript application to reflect that two students worked on the project. So, be 
-prepared to hand in a very well designed, attractive app with bells and whistles!
-
-You will be graded on your style, as well as your coding and functionality, so be sure to make your HTML form 
-and resulting output neat and attractive. Add a header image, other images, and fonts and color to your output. 
-Create something you will be proud to add your your professional portfolio!
 -->
 
 <html lang="en">
@@ -106,11 +86,11 @@ Create something you will be proud to add your your professional portfolio!
     document.write("<tr>")
     document.write("<td>")
     document.write("First")
-    document.write("<input id='fname' class='fname' type='text' name='first' value='First name' />")
+    document.write("<input id='fname' class='fname' type='text' name='first' value='First' />")
     document.write("</td>")
     document.write("<td>")
     document.write("Last")
-    document.write("<input id='lname' class='lname' type='text' name='last' value='Last name' />")
+    document.write("<input id='lname' class='lname' type='text' name='last' value='Last' />")
     document.write("</td>")
     document.write("</tr>")
 
@@ -136,11 +116,11 @@ Create something you will be proud to add your your professional portfolio!
     document.write("<tr>")
     document.write("<td>")
     document.write("Zip ")
-    document.write("<input id='zip' type='text' name='zip' value='Zip' />")
+    document.write("<input id='zip' type='text' name='zip' value='12345' />")
     document.write("</td>")
     document.write("<td>")
     document.write("Country ")
-    document.write("<input id='country' type='text' name='country' value='Country' />")
+    document.write("<input id='country' type='text' name='country' value='USA' />")
     document.write("</td>")
     document.write("</tr>")
 
@@ -160,7 +140,7 @@ Create something you will be proud to add your your professional portfolio!
     document.write("Hobbies and Interests ->")
     document.write("</td>")
     document.write("<td>")
-    document.write("<textarea rows='5' cols='30' id='hobbies' type='textarea' name='hobbies' value='Hobbies' />")
+    document.write("<textarea rows='5' cols='30' id='hobbies' type='textarea' name='hobbies' value='Hobbies go here.' />")
     document.write("</textarea>")
     document.write("</td>")
     document.write("</tr>")
